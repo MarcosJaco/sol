@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sol Volta ao Mundo · Agência de Viagens e Assessoria</title>
+  <meta name="description" content="Agência de viagens e assessoria da Solange. Passagens nacionais e internacionais, pacotes e excursões, imigração segura, documentação e suporte VIP no Brasil e em Portugal.">
+  <meta name="theme-color" content="#0A1F4D">
+  <meta property="og:title" content="Sol Volta ao Mundo · O mundo espera por si">
+  <meta property="og:description" content="Passagens, excursões, imigração segura e suporte VIP. Atendimento pessoal da Solange no Brasil e em Portugal.">
+  <meta property="og:image" content="assets/paris.webp">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/paris-cutout.webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#topo" aria-label="Sol Volta ao Mundo, início">
+    <img src="assets/logo-original.jpg" alt="" width="44" height="44">
+    <span class="nav__name"><b>Sol</b> Volta ao Mundo</span>
+  </a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#rotas">Rotas</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#documentacao">Documentação</a>
+    <a href="#cotacao">Cotação</a>
+    <a href="#solange">A Solange</a>
+  </nav>
+  <button class="btn btn--gold nav__cta" data-open-contact type="button">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+    Falar com a Solange
+  </button>
+  <button class="nav__burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="#rotas">Rotas</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#documentacao">Documentação</a>
+    <a href="#cotacao">Cotação</a>
+    <a href="#solange">A Solange</a>
+    <a href="#embarque">Contato</a>
+  </nav>
+  <p class="menu__note">O mundo espera por si!</p>
+</div>
+
+<main id="conteudo">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo" aria-labelledby="hero-title">
+  <div class="hero__sky" aria-hidden="true">
+    <div class="hero__sun"></div>
+    <div class="cloud cloud--a"></div>
+    <div class="cloud cloud--b"></div>
+    <div class="cloud cloud--c"></div>
+    <svg class="hero__plane" viewBox="0 0 64 24"><use href="#i-plane-side"/></svg>
+  </div>
+
+  <div class="hero__copy">
+    <p class="hero__kicker">Agência de viagens e assessoria · Brasil e Portugal</p>
+    <h1 id="hero-title">O mundo<br>espera <em>por si.</em></h1>
+    <p class="hero__lead">Passagens nacionais e internacionais, excursões, imigração com segurança e suporte VIP do primeiro clique ao desembarque. Quem cuida de tudo é a Solange, pessoalmente.</p>
+
+    <div class="hero__board" aria-live="polite">
+      <span class="hero__board-label">Próximo embarque</span>
+      <span class="flap" id="heroFlap" data-len="9" aria-label="Paris">PARIS</span>
+    </div>
+
+    <div class="hero__actions">
+      <a class="btn btn--gold btn--lg" href="#cotacao">Montar minha cotação</a>
+      <button class="btn btn--glass btn--lg" type="button" data-open-contact>
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+        WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <div class="hero__stage" aria-hidden="true">
+    <div class="hero__word"><span class="hero__word-script">volta ao</span>MUNDO</div>
+    <picture class="hero__photo">
+      <source media="(max-width: 899px)" srcset="assets/paris-cutout-m.webp">
+      <img src="assets/paris-cutout.webp" alt="" width="1086" height="1448" fetchpriority="high">
+    </picture>
+    <div class="hero__stub">
+      <span class="hero__stub-top">CARTÃO DE EMBARQUE</span>
+      <span class="hero__stub-route">GYN <svg viewBox="0 0 24 24"><use href="#i-plane"/></svg> CDG</span>
+      <span class="hero__stub-bottom"><span>PORTÃO SOL</span><span>ASSENTO VIP</span></span>
+    </div>
+    <p class="hero__note">nós em Paris!</p>
+  </div>
+</section>
+
+<!-- ============ ROTAS / GLOBO ============ -->
+<section class="routes" id="rotas" aria-labelledby="routes-title">
+  <div class="routes__grid">
+    <div class="routes__info">
+      <h2 id="routes-title" class="h2">Do Brasil à Europa, América, Ásia e muito mais.</h2>
+      <p class="lede">Escolha de onde sai e para onde sonha ir. O painel mostra a rota, o globo mostra o caminho e a Solange encontra o melhor preço.</p>
+
+      <div class="seg" role="radiogroup" aria-label="Saindo de">
+        <button type="button" role="radio" aria-checked="true" data-origin="br"><span class="flag flag--br" aria-hidden="true"></span>Saindo do Brasil</button>
+        <button type="button" role="radio" aria-checked="false" data-origin="pt"><span class="flag flag--pt" aria-hidden="true"></span>Saindo de Portugal</button>
+      </div>
+
+      <div class="board" role="listbox" aria-label="Painel de partidas" id="board">
+        <div class="board__head" aria-hidden="true"><span>Destino</span><span>País</span><span>Código</span><span>Status</span></div>
+        <!-- rows rendered by JS -->
+      </div>
+    </div>
+
+    <div class="routes__globe">
+      <div class="globe" id="globeWrap">
+        <canvas id="globe" aria-label="Globo interativo com a rota selecionada" role="img"></canvas>
+        <p class="globe__hint">arraste para girar</p>
+      </div>
+      <div class="route-card">
+        <div class="route-card__line">
+          <span class="route-card__code" id="rcFrom">BR</span>
+          <span class="route-card__track"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plane"/></svg></span>
+          <span class="route-card__code" id="rcTo">CDG</span>
+        </div>
+        <p class="route-card__name" id="rcName">Brasil para Paris</p>
+        <div class="route-card__actions">
+          <a class="btn btn--gold" id="rcWa" href="#" target="_blank" rel="noopener">Cotar esta rota</a>
+          <button class="btn btn--line" type="button" id="rcPass">Levar para o cartão</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS / ESTEIRA ============ -->
+<section class="bags" id="servicos" aria-labelledby="bags-title">
+  <div class="bags__sticky">
+    <div class="bags__head">
+      <h2 id="bags-title" class="h2">Tudo o que a sua viagem precisa, numa só bagagem.</h2>
+      <p class="lede">Toque numa etiqueta e peça o serviço direto no WhatsApp.</p>
+    </div>
+    <div class="bags__belt">
+      <ul class="bags__track" id="bagsTrack">
+        <li class="tag" style="--tilt:-3deg">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <span class="tag__code">PAX</span>
+          <svg class="tag__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plane"/></svg>
+          <h3>Passagens nacionais e internacionais</h3>
+          <p>Pesquisamos companhias, conexões e tarifas até achar a combinação certa para o seu bolso e o seu horário.</p>
+          <a class="tag__cta" data-wa-service="passagens aéreas" href="#" target="_blank" rel="noopener">Pedir cotação <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="tag tag--gold" style="--tilt:2deg">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <span class="tag__code">EXC</span>
+          <svg class="tag__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-map"/></svg>
+          <h3>Pacotes e excursões</h3>
+          <p>Roteiros prontos ou montados do zero, em grupo ou só para você, com tudo encaixado: voo, hotel e passeios.</p>
+          <a class="tag__cta" data-wa-service="pacotes e excursões" href="#" target="_blank" rel="noopener">Quero um roteiro <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="tag tag--navy" style="--tilt:-1.5deg">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <span class="tag__code">IMG</span>
+          <svg class="tag__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg>
+          <h3>Imigrar com segurança</h3>
+          <p>Orientação para quem vai morar, estudar ou trabalhar fora, com cada documento no lugar antes de embarcar.</p>
+          <a class="tag__cta" data-wa-service="assessoria para imigração" href="#" target="_blank" rel="noopener">Falar sobre imigração <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="tag" style="--tilt:3deg">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <span class="tag__code">DOC</span>
+          <svg class="tag__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-passport"/></svg>
+          <h3>Suporte com documentação</h3>
+          <p>Passaporte, vistos, autorizações e checklists: você sabe o que precisa, quando precisa e em que ordem.</p>
+          <a class="tag__cta" data-wa-service="suporte com documentação" href="#" target="_blank" rel="noopener">Revisar documentos <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="tag tag--gold" style="--tilt:-2.5deg">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <span class="tag__code">HTL</span>
+          <svg class="tag__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bed"/></svg>
+          <h3>Hotéis e hospedagem</h3>
+          <p>Bem localizados, com bom custo-benefício e reservados junto com o resto da viagem.</p>
+          <a class="tag__cta" data-wa-service="reserva de hotel" href="#" target="_blank" rel="noopener">Reservar hotel <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="tag" style="--tilt:1.5deg">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <span class="tag__code">INS</span>
+          <svg class="tag__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-umbrella"/></svg>
+          <h3>Seguro viagem</h3>
+          <p>Exigido em muitos destinos e essencial em todos. A cobertura certa para o seu tipo de viagem.</p>
+          <a class="tag__cta" data-wa-service="seguro viagem" href="#" target="_blank" rel="noopener">Cotar seguro <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="tag tag--navy tag--vip" style="--tilt:-2deg">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <span class="tag__code">VIP</span>
+          <svg class="tag__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-headset"/></svg>
+          <h3>Suporte VIP</h3>
+          <p>Atendimento personalizado antes, durante e depois da viagem. Atraso, conexão, dúvida: é só chamar.</p>
+          <a class="tag__cta" data-wa-service="suporte VIP" href="#" target="_blank" rel="noopener">Quero suporte VIP <span aria-hidden="true">→</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCUMENTAÇÃO / PASSAPORTE ============ -->
+<section class="docs" id="documentacao" aria-labelledby="docs-title">
+  <div class="docs__intro">
+    <h2 id="docs-title" class="h2">Imigrar e viajar com segurança começa no papel certo.</h2>
+    <p class="lede">Marque o que já tem. O passaporte vai carimbando, e o que faltar vai direto para a Solange revisar com você.</p>
+  </div>
+
+  <div class="passport">
+    <div class="passport__page passport__page--left">
+      <p class="passport__label">Motivo da viagem</p>
+      <div class="purpose" role="tablist" aria-label="Motivo da viagem" id="purpose">
+        <button role="tab" type="button" aria-selected="true" data-purpose="turismo">Turismo</button>
+        <button role="tab" type="button" aria-selected="false" data-purpose="morar">Morar em Portugal</button>
+        <button role="tab" type="button" aria-selected="false" data-purpose="estudar">Estudar fora</button>
+        <button role="tab" type="button" aria-selected="false" data-purpose="trabalhar">Trabalhar fora</button>
+      </div>
+      <div class="stamps" id="stamps" aria-hidden="true"></div>
+      <div class="progress">
+        <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19"/><circle class="progress__bar" id="progBar" cx="22" cy="22" r="19"/></svg>
+        <p><b id="progText">0 de 7</b> itens prontos</p>
+      </div>
+      <div class="passport__mrz" aria-hidden="true">P&lt;BRA&lt;SOL&lt;VOLTA&lt;AO&lt;MUNDO&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>SVM2027&lt;&lt;O&lt;MUNDO&lt;ESPERA&lt;POR&lt;SI&lt;&lt;&lt;&lt;</div>
+    </div>
+    <div class="passport__page passport__page--right">
+      <ul class="checklist" id="checklist" role="tabpanel" aria-label="Checklist de documentos"></ul>
+      <p class="passport__disclaimer">Lista orientativa. Requisitos mudam e variam por país e perfil, por isso a Solange confere o seu caso antes de qualquer passo.</p>
+      <a class="btn btn--navy" id="docsWa" href="#" target="_blank" rel="noopener">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+        Revisar minha documentação
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COTAÇÃO / CARTÃO DE EMBARQUE (peak) ============ -->
+<section class="quote" id="cotacao" aria-labelledby="quote-title">
+  <div class="quote__head">
+    <p class="script">seu próximo destino começa aqui</p>
+    <h2 id="quote-title" class="h2 h2--xl">Preencha o seu cartão de embarque.</h2>
+    <p class="lede">Ele vira uma mensagem pronta no WhatsApp da Solange. Sem formulário, sem espera, sem robô.</p>
+  </div>
+
+  <form class="pass" id="pass" novalidate>
+    <div class="pass__main">
+      <div class="pass__top">
+        <span class="pass__brand"><img src="assets/logo-original.jpg" alt="" width="34" height="34"> Sol Volta ao Mundo</span>
+        <span class="pass__kind">CARTÃO DE EMBARQUE · <span id="pFlight">SVM 0000</span></span>
+      </div>
+
+      <div class="pass__route">
+        <label class="pass__city">
+          <span class="pass__lbl">De</span>
+          <span class="flap flap--big" id="pFromCode" data-len="3" aria-hidden="true">GYN</span>
+          <input type="text" name="from" id="fFrom" list="cities" placeholder="Goiânia" autocomplete="off" value="">
+        </label>
+        <span class="pass__plane" aria-hidden="true">
+          <svg viewBox="0 0 120 30"><path d="M2 26 Q60 -6 118 26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 5"/></svg>
+          <svg class="pass__plane-ico" viewBox="0 0 24 24"><use href="#i-plane"/></svg>
+        </span>
+        <label class="pass__city pass__city--to">
+          <span class="pass__lbl">Para</span>
+          <span class="flap flap--big" id="pToCode" data-len="3" aria-hidden="true">???</span>
+          <input type="text" name="to" id="fTo" list="cities" placeholder="Para onde?" autocomplete="off" required>
+        </label>
+      </div>
+
+      <div class="pass__fields">
+        <label class="pass__field">
+          <span class="pass__lbl">Passageiro</span>
+          <input type="text" name="name" id="fName" placeholder="Seu nome" autocomplete="given-name">
+        </label>
+        <label class="pass__field">
+          <span class="pass__lbl">Ida</span>
+          <input type="date" name="go" id="fGo">
+        </label>
+        <label class="pass__field">
+          <span class="pass__lbl">Volta</span>
+          <input type="date" name="back" id="fBack">
+        </label>
+        <div class="pass__field">
+          <span class="pass__lbl" id="paxLbl">Passageiros</span>
+          <div class="stepper" role="group" aria-labelledby="paxLbl">
+            <button type="button" data-step="-1" aria-label="Menos um passageiro">−</button>
+            <output id="fPax" aria-live="polite">1</output>
+            <button type="button" data-step="1" aria-label="Mais um passageiro">+</button>
+          </div>
+        </div>
+        <div class="pass__field pass__field--wide">
+          <span class="pass__lbl" id="classLbl">Classe</span>
+          <div class="chips" role="radiogroup" aria-labelledby="classLbl" data-group="classe">
+            <button type="button" role="radio" aria-checked="true">Econômica</button>
+            <button type="button" role="radio" aria-checked="false">Executiva</button>
+            <button type="button" role="radio" aria-checked="false">Tanto faz</button>
+          </div>
+        </div>
+        <div class="pass__field pass__field--full">
+          <span class="pass__lbl" id="kindLbl">O que você procura</span>
+          <div class="chips" role="radiogroup" aria-labelledby="kindLbl" data-group="interesse">
+            <button type="button" role="radio" aria-checked="true">Passagem aérea</button>
+            <button type="button" role="radio" aria-checked="false">Pacote completo</button>
+            <button type="button" role="radio" aria-checked="false">Excursão</button>
+            <button type="button" role="radio" aria-checked="false">Imigração</button>
+          </div>
+        </div>
+      </div>
+      <div class="pass__stamp" aria-hidden="true">ENVIADO<br><small>à Solange</small></div>
+    </div>
+
+    <div class="pass__perf" aria-hidden="true"></div>
+
+    <div class="pass__stub">
+      <div class="pass__stub-row">
+        <div><span class="pass__lbl">Portão</span><b>SOL</b></div>
+        <div><span class="pass__lbl">Assento</span><b>VIP</b></div>
+      </div>
+      <div>
+        <span class="pass__lbl">Atendimento por</span>
+        <div class="seg seg--mini" role="radiogroup" aria-label="Atendimento por">
+          <button type="button" role="radio" aria-checked="true" data-region="br"><span class="flag flag--br" aria-hidden="true"></span>Brasil</button>
+          <button type="button" role="radio" aria-checked="false" data-region="pt"><span class="flag flag--pt" aria-hidden="true"></span>Portugal</button>
+        </div>
+      </div>
+      <svg class="pass__barcode" id="barcode" viewBox="0 0 200 48" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <a class="btn btn--gold btn--lg pass__send" id="passSend" href="#" target="_blank" rel="noopener">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+        Emitir cotação
+      </a>
+      <p class="pass__hint" id="passHint" role="status"></p>
+    </div>
+  </form>
+
+  <datalist id="cities"></datalist>
+</section>
+
+<!-- ============ SOLANGE + COMO FUNCIONA ============ -->
+<section class="about" id="solange" aria-labelledby="about-title">
+  <div class="about__grid">
+    <figure class="polaroid" data-reveal>
+      <img src="assets/paris.webp" alt="Duas viajantes seguram o banner da Sol Volta ao Mundo em frente à Torre Eiffel, em Paris" width="900" height="1200" loading="lazy">
+      <figcaption>Paris, com a nossa bandeira na mão ✈</figcaption>
+    </figure>
+    <div class="about__text">
+      <h2 id="about-title" class="h2">Aqui você não fala com um robô. Fala com a Solange.</h2>
+      <p class="lede">A Sol Volta ao Mundo nasceu de quem vive a estrada: atendimento de pessoa para pessoa, no Brasil e em Portugal, para quem quer viajar bem e sem dor de cabeça.</p>
+      <blockquote class="about__quote">
+        <p>“Mais que passagens, realizamos sonhos.”</p>
+        <cite>Solange, fundadora</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="flight" id="flight">
+    <h3 class="flight__title">Como a sua viagem decola</h3>
+    <svg class="flight__path" id="flightSvg" viewBox="0 0 1000 1200" preserveAspectRatio="none" aria-hidden="true">
+      <path id="flightTrack" d="M500 0 C 160 160, 160 300, 500 400 S 840 640, 500 800 S 160 1040, 500 1200" fill="none"/>
+      <path id="flightDraw" d="M500 0 C 160 160, 160 300, 500 400 S 840 640, 500 800 S 160 1040, 500 1200" fill="none"/>
+    </svg>
+    <svg class="flight__plane" id="flightPlane" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plane"/></svg>
+    <ol class="flight__steps">
+      <li class="step" data-reveal>
+        <span class="step__time">Check-in</span>
+        <h4>Você conta o sonho</h4>
+        <p>Destino, datas, orçamento, quem vai junto. Uma mensagem no WhatsApp basta.</p>
+      </li>
+      <li class="step step--right" data-reveal>
+        <span class="step__time">Pesquisa</span>
+        <h4>A Solange compara tudo</h4>
+        <p>Companhias, horários, conexões e hospedagem, até achar as melhores opções para você.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__time">Embarque</span>
+        <h4>Você aprova e viaja tranquilo</h4>
+        <p>Compra segura, documentação conferida e tudo explicado antes de sair de casa.</p>
+      </li>
+      <li class="step step--right" data-reveal>
+        <span class="step__time">Em voo</span>
+        <h4>Suporte VIP do início ao fim</h4>
+        <p>Durante a viagem, a Solange continua a um toque de distância.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PORTÃO DE EMBARQUE (close) ============ -->
+<section class="gate" id="embarque" aria-labelledby="gate-title">
+  <div class="gate__sun" aria-hidden="true"></div>
+  <div class="gate__inner">
+    <h2 id="gate-title" class="gate__title">O mundo espera por si.<br><span>A Solange também.</span></h2>
+    <div class="gate__cards">
+      <a class="gatecard" data-wa-region="br" href="#" target="_blank" rel="noopener">
+        <span class="gatecard__top"><span class="flag flag--br flag--lg" aria-hidden="true"></span>Portão Brasil</span>
+        <span class="gatecard__num">+55 (62) 9488-9374</span>
+        <span class="gatecard__go">Abrir WhatsApp <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="gatecard" data-wa-region="pt" href="#" target="_blank" rel="noopener">
+        <span class="gatecard__top"><span class="flag flag--pt flag--lg" aria-hidden="true"></span>Portão Portugal</span>
+        <span class="gatecard__num">+351 961 425 870</span>
+        <span class="gatecard__go">Abrir WhatsApp <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="gatecard gatecard--ig" href="https://www.instagram.com/sol.voltaaomundo/" target="_blank" rel="noopener">
+        <span class="gatecard__top"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</span>
+        <span class="gatecard__num">@sol.voltaaomundo</span>
+        <span class="gatecard__go">Ver viagens <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+  <footer class="footer">
+    <a class="footer__brand" href="#topo"><img src="assets/logo-original.jpg" alt="" width="40" height="40"> Sol Volta ao Mundo</a>
+    <p>Agência de viagens e assessoria · Passagens · Pacotes · Hotéis · Seguro viagem · Imigração</p>
+    <p>© <span id="year">2026</span> Sol Volta ao Mundo. Solange, sua parceira em todas as viagens.</p>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============ WHATSAPP FLOAT + CONTACT DIALOG ============ -->
+<button class="wa-float" type="button" data-open-contact aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+</button>
+
+<dialog class="contact" id="contact" aria-labelledby="contact-title">
+  <form method="dialog" class="contact__close-form"><button class="contact__x" aria-label="Fechar">×</button></form>
+  <p class="script">fale com a Solange</p>
+  <h2 id="contact-title">Por qual WhatsApp prefere falar?</h2>
+  <a class="contact__opt" data-wa-region="br" href="#" target="_blank" rel="noopener">
+    <span class="flag flag--br flag--lg" aria-hidden="true"></span>
+    <span><b>Brasil</b><small>+55 (62) 9488-9374</small></span>
+    <span class="contact__arrow" aria-hidden="true">→</span>
+  </a>
+  <a class="contact__opt" data-wa-region="pt" href="#" target="_blank" rel="noopener">
+    <span class="flag flag--pt flag--lg" aria-hidden="true"></span>
+    <span><b>Portugal</b><small>+351 961 425 870</small></span>
+    <span class="contact__arrow" aria-hidden="true">→</span>
+  </a>
+  <p class="contact__note">Abre o WhatsApp com uma mensagem pronta. É só enviar.</p>
+</dialog>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-plane" viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 15.5v-2l-8-5V3.2c0-.9-.7-1.7-1.5-1.7s-1.5.8-1.5 1.7v5.3l-8 5v2l8-2.5v5.2l-2 1.5v1.8l3.5-1 3.5 1v-1.8l-2-1.5V13z"/></symbol>
+  <symbol id="i-plane-side" viewBox="0 0 64 24"><path fill="currentColor" d="M62 10.5c0-1.6-2.4-2.6-5-2.6H40.8L28.3 0h-5l7 7.9H13.6L8.3 2.6H4.6l3.2 7.6c-.5.3-.5 1.3 0 1.6L4.6 19.4h3.7l5.3-5.3h16.7l-7 7.9h5l12.5-7.9H57c2.6 0 5-1 5-2.6z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4.1 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-passport" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9 17h6"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 5v14M3 15h18v4M21 15v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-umbrella" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 12a9 9 0 0 1 18 0H3zM12 12v6.5a2 2 0 0 1-4 0M12 3v0"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="17" y="13" width="4" height="6" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M19 19c0 1.5-2 2.5-5 2.5"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+</svg>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
